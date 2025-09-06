@@ -19,8 +19,8 @@
 
         .language-switch {
             position: absolute;
-            top: 40px;
-            right: 40px;
+            top: 20px;
+            right: 20px;
             z-index: 1000;
         }
 
@@ -59,6 +59,7 @@
             padding: 40px 50px;
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
         }
 
         h1 {
@@ -209,12 +210,11 @@
 </head>
 
 <body>
-    <div class="language-switch">
-        <button id="lang-en">English</button>
-        <button id="lang-fr">Français</button>
-    </div>
-
     <div class="container">
+        <div class="language-switch">
+            <button id="lang-en">English</button>
+            <button id="lang-fr">Français</button>
+        </div>
         <h1>Anton KARNEICHIK</h1>
         <div class="contact-info">
             <p>
@@ -275,7 +275,7 @@
                 <div class="experience-item">
                     <h3 id="donki-title">2023 - Donki - shift leader, assistant manager</h3>
                     <ul>
-                        <li id="donki-1"><b>estaurant Operations:</b> Managed all aspects of restaurant readiness, including pre-opening preparation, cooking, and front-of-house setup. I planned daily workflows and ensured a consistent supply of products during service hours.</li>
+                        <li id="donki-1"><b>Restaurant Operations:</b> Managed all aspects of restaurant readiness, including pre-opening preparation, cooking, and front-of-house setup. I planned daily workflows and ensured a consistent supply of products during service hours.</li>
                         <li id="donki-2"><b>Team Leadership & Management:</b> Supervised and directed a team of student employees, assigning tasks and ensuring efficient completion.</li>
                         <li id="donki-3"><b>Inventory & Logistics:</b> bi-weekly stock checks and inventory to maintain optimal levels. I was responsible for placing orders, receiving deliveries, and implementing a FIFO (First-In, First-Out).</li>
                     </ul>
@@ -322,7 +322,7 @@
             </div>
         </div>
     </div>
-    
+
     <script>
         const translations = {
             en: {
@@ -339,20 +339,20 @@
                 language2Level: "Limited Working Proficiency",
                 experienceTitle: "EXPERIENCE",
                 weezeventTitle: "2019 -> Now - Weezevent (Belgium) - Casless runner, assistance, acces",
-                weezevent1: "Cashless Runner & On-Site Support: Actively monitoring both mobile and fixed cashless devices. Troubleshot technical and providing immediate support to ensure smooth and uninterrupted transactions.",
-                weezevent2: "Access Team & Troubleshooting: Diagnosing and resolving issues with user wristbands and tickets, ensuring a seamless entry experience for attendees.",
+                weezevent1: "<b>Cashless Runner & On-Site Support:</b> Actively monitoring both mobile and fixed cashless devices. Troubleshot technical and providing immediate support to ensure smooth and uninterrupted transactions.",
+                weezevent2: "<b>Access Team & Troubleshooting:</b> Diagnosing and resolving issues with user wristbands and tickets, ensuring a seamless entry experience for attendees.",
                 weezevent3: "Got a very thorough knowledge of Weez technologies.",
-                weezevent4: "Event responsible (2025): Took on a leadership role, deploying cashless and access system on site. I served as the primary contact for event organizers, resolving technical challenges and guaranteeing the efficient operation of the system.",
+                weezevent4: "<b>Event responsible (2025):</b> Took on a leadership role, deploying cashless and access system on site. I served as the primary contact for event organizers, resolving technical challenges and guaranteeing the efficient operation of the system.",
                 donkiTitle: "2023 - Donki - shift leader, assistant manager",
-                donki1: "Restaurant Operations: Managed all aspects of restaurant readiness, including pre-opening preparation, cooking, and front-of-house setup. I planned daily workflows and ensured a consistent supply of products during service hours.",
-                donki2: "Team Leadership & Management: Supervised and directed a team of student employees, assigning tasks and ensuring efficient completion.",
-                donki3: "Inventory & Logistics: bi-weekly stock checks and inventory to maintain optimal levels. I was responsible for placing orders, receiving deliveries, and implementing a FIFO (First-In, First-Out).",
+                donki1: "<b>Restaurant Operations:</b> Managed all aspects of restaurant readiness, including pre-opening preparation, cooking, and front-of-house setup. I planned daily workflows and ensured a consistent supply of products during service hours.",
+                donki2: "<b>Team Leadership & Management:</b> Supervised and directed a team of student employees, assigning tasks and ensuring efficient completion.",
+                donki3: "<b>Inventory & Logistics:</b> bi-weekly stock checks and inventory to maintain optimal levels. I was responsible for placing orders, receiving deliveries, and implementing a FIFO (First-In, First-Out).",
                 ibgeTitle: "2020 -> 2023 - IBGE BIM - forestry worker",
-                ibge1: "<b>Forestry & Conservation: Managed the lifecycle of forest plantations, performing tasks such as tree felling, planting, and monitoring their growth and health. I also conducted rigorous inventories to track tree species.</b>",
-                ibge2: "Maintenance & Infrastructure: Maintained public infrastructures to enhance the visitor experience within the forest.",
-                ibge3: "Forest Health: Monitored and shaped trees to promote forest health and growth.",
+                ibge1: "<b>Forestry & Conservation:</b> Managed the lifecycle of forest plantations, performing tasks such as tree felling, planting, and monitoring their growth and health. I also conducted rigorous inventories to track tree species.",
+                ibge2: "<b>Maintenance & Infrastructure:</b> Maintained public infrastructures to enhance the visitor experience within the forest.",
+                ibge3: "<b>Forest Health:</b> Monitored and shaped trees to promote forest health and growth.",
                 ilCaprianiTitle: "2017 -> 2020 - Il Capriani - Waiter, Bartender, Head Waiter",
-                ilCapriani1: "server then promoted to Head Waiter based on good performance and leadership skills.",
+                ilCapriani1: "<b>Server</b> then promoted to <b>Head Waiter</b> based on good performance and leadership skills.",
                 ilCapriani2: "Oversaw daily restaurant operations, including organizing the dining room, managing reservations, and ensuring efficient service.",
                 ilCapriani3: "Supervised, trained, and mentored new staff, fostering a collaborative and high-performing team.",
                 ilCapriani4: "Managed opening and closing procedures, including cash handling, inventory checks, and preparing the restaurant for service.",
@@ -375,20 +375,20 @@
                 language2Level: "Maîtrise professionnelle limitée",
                 experienceTitle: "EXPÉRIENCE",
                 weezeventTitle: "2019 -> Aujourd'hui - Weezevent (Belgique) - Opérateur cashless, assistance, accès",
-                weezevent1: "Opérateur Cashless & Support sur Site: Surveiller activement les dispositifs cashless mobiles et fixes. Dépanner et fournir un support immédiat pour garantir des transactions fluides et ininterrompues.",
-                weezevent2: "Équipe d'Accès & Dépannage: Diagnostiquer et résoudre les problèmes liés aux bracelets et aux billets des utilisateurs, assurant une expérience d'entrée fluide pour les participants.",
+                weezevent1: "<b>Opérateur Cashless & Support sur Site :</b> Surveiller activement les dispositifs cashless mobiles et fixes. Dépanner et fournir un support immédiat pour garantir des transactions fluides et ininterrompues.",
+                weezevent2: "<b>Équipe d'Accès & Dépannage :</b> Diagnostiquer et résoudre les problèmes liés aux bracelets et aux billets des utilisateurs, assurant une expérience d'entrée fluide pour les participants.",
                 weezevent3: "Acquis une connaissance approfondie des technologies Weez.",
-                weezevent4: "Responsable d'événement (2025): Assumé un rôle de leadership, déployant le système cashless et d'accès sur site. J'ai servi de contact principal pour les organisateurs d'événements, résolvant les défis techniques et garantissant le fonctionnement efficace du système.",
+                weezevent4: "<b>Responsable d'événement (2025) :</b> Assumé un rôle de leadership, déployant le système cashless et d'accès sur site. J'ai servi de contact principal pour les organisateurs d'événements, résolvant les défis techniques et garantissant le fonctionnement efficace du système.",
                 donkiTitle: "2023 - Donki - chef d'équipe, assistant gérant",
-                donki1: "Opérations du Restaurant: Géré tous les aspects de la préparation du restaurant, y compris la préparation avant l'ouverture, la cuisine et la mise en place de la salle. J'ai planifié les flux de travail quotidiens et assuré un approvisionnement constant en produits pendant les heures de service.",
-                donki2: "Leadership et Gestion d'Équipe: Supervisé et dirigé une équipe d'employés étudiants, assignant des tâches et garantissant une exécution efficace.",
-                donki3: "Inventaire et Logistique: Vérification des stocks bi-hebdomadaire et inventaire pour maintenir des niveaux optimaux. J'étais responsable de la passation des commandes, de la réception des livraisons et de la mise en œuvre d'une méthode FIFO (First-In, First-Out).",
+                donki1: "<b>Opérations du Restaurant :</b> Géré tous les aspects de la préparation du restaurant, y compris la préparation avant l'ouverture, la cuisine et la mise en place de la salle. J'ai planifié les flux de travail quotidiens et assuré un approvisionnement constant en produits pendant les heures de service.",
+                donki2: "<b>Leadership et Gestion d'Équipe :</b> Supervisé et dirigé une équipe d'employés étudiants, assignant des tâches et garantissant une exécution efficace.",
+                donki3: "<b>Inventaire et Logistique :</b> Vérification des stocks bi-hebdomadaire et inventaire pour maintenir des niveaux optimaux. J'étais responsable de la passation des commandes, de la réception des livraisons et de la mise en œuvre d'une méthode FIFO (First-In, First-Out).",
                 ibgeTitle: "2020 -> 2023 - IBGE BIM - travailleur forestier",
-                ibge1: "<b>Sylviculture et Conservation: Géré le cycle de vie des plantations forestières, effectuant des tâches telles que l'abattage, la plantation et la surveillance de leur croissance et de leur santé. J'ai également mené des inventaires rigoureux pour suivre les espèces d'arbres.</b>",
-                ibge2: "Entretien et Infrastructure: Entretenu les infrastructures publiques pour améliorer l'expérience des visiteurs dans la forêt.",
-                ibge3: "Santé de la Forêt: Surveillé et taillé les arbres pour favoriser la santé et la croissance de la forêt.",
+                ibge1: "<b>Sylviculture et Conservation :</b> Géré le cycle de vie des plantations forestières, effectuant des tâches telles que l'abattage, la plantation et la surveillance de leur croissance et de leur santé. J'ai également mené des inventaires rigoureux pour suivre les espèces d'arbres.",
+                ibge2: "<b>Entretien et Infrastructure :</b> Entretenu les infrastructures publiques pour améliorer l'expérience des visiteurs dans la forêt.",
+                ibge3: "<b>Santé de la Forêt :</b> Surveillé et taillé les arbres pour favoriser la santé et la croissance de la forêt.",
                 ilCaprianiTitle: "2017 -> 2020 - Il Capriani - Serveur, Barman, Chef de Rang",
-                ilCapriani1: "Serveur, puis promu Chef de Rang en raison de mes bonnes performances et de mes compétences en leadership.",
+                ilCapriani1: "<b>Serveur</b>, puis promu <b>Chef de Rang</b> en raison de mes bonnes performances et de mes compétences en leadership.",
                 ilCapriani2: "Supervisé les opérations quotidiennes du restaurant, y compris l'organisation de la salle, la gestion des réservations et l'assurance d'un service efficace.",
                 ilCapriani3: "Supervisé, formé et encadré le nouveau personnel, favorisant une équipe collaborative et performante.",
                 ilCapriani4: "Géré les procédures d'ouverture et de fermeture, y compris la gestion de la caisse, les vérifications d'inventaire et la préparation du restaurant pour le service.",
@@ -414,20 +414,20 @@
             document.getElementById('language-2-level').textContent = t.language2Level;
             document.getElementById('experience-title').textContent = t.experienceTitle;
             document.getElementById('weezevent-title').textContent = t.weezeventTitle;
-            document.getElementById('weezevent-1').textContent = t.weezevent1;
-            document.getElementById('weezevent-2').textContent = t.weezevent2;
+            document.getElementById('weezevent-1').innerHTML = t.weezevent1;
+            document.getElementById('weezevent-2').innerHTML = t.weezevent2;
             document.getElementById('weezevent-3').textContent = t.weezevent3;
-            document.getElementById('weezevent-4').textContent = t.weezevent4;
+            document.getElementById('weezevent-4').innerHTML = t.weezevent4;
             document.getElementById('donki-title').textContent = t.donkiTitle;
-            document.getElementById('donki-1').textContent = t.donki1;
-            document.getElementById('donki-2').textContent = t.donki2;
-            document.getElementById('donki-3').textContent = t.donki3;
+            document.getElementById('donki-1').innerHTML = t.donki1;
+            document.getElementById('donki-2').innerHTML = t.donki2;
+            document.getElementById('donki-3').innerHTML = t.donki3;
             document.getElementById('ibge-title').textContent = t.ibgeTitle;
             document.getElementById('ibge-1').innerHTML = t.ibge1;
-            document.getElementById('ibge-2').textContent = t.ibge2;
-            document.getElementById('ibge-3').textContent = t.ibge3;
+            document.getElementById('ibge-2').innerHTML = t.ibge2;
+            document.getElementById('ibge-3').innerHTML = t.ibge3;
             document.getElementById('il-capriani-title').textContent = t.ilCaprianiTitle;
-            document.getElementById('il-capriani-1').textContent = t.ilCapriani1;
+            document.getElementById('il-capriani-1').innerHTML = t.ilCapriani1;
             document.getElementById('il-capriani-2').textContent = t.ilCapriani2;
             document.getElementById('il-capriani-3').textContent = t.ilCapriani3;
             document.getElementById('il-capriani-4').textContent = t.ilCapriani4;
