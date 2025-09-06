@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Anton KARNEICHIK - CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            /* Dark blue/grey for text */
+            --accent-color: #3498db;
+            /* Blue for accents */
+            --light-grey: #ecf0f1;
+            /* Very light grey for background */
+            --medium-grey: #bdc3c7;
+            /* Medium grey for borders */
+        }
+
+        .language-switch {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            z-index: 1000;
+        }
+
+        .language-switch button {
+            border: 1px solid var(--primary-color);
+            background: transparent;
+            color: var(--primary-color);
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .language-switch button:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 30px;
+            background-color: var(--light-grey);
+            color: var(--primary-color);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .contact-info p {
+            margin: 3px 0;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--medium-grey);
+            padding-bottom: 8px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+            font-weight: 600;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-content {
+            margin-left: 0;
+        }
+
+        .section-content p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skills-list {
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .languages-table,
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        .languages-table td,
+        .education-table td {
+            padding: 12px 15px;
+            border: 1px solid var(--light-grey);
+            vertical-align: top;
+            font-size: 0.95em;
+        }
+
+        .languages-table td:first-child,
+        .education-table td:first-child {
+            font-weight: 600;
+            width: 140px;
+            color: var(--primary-color);
+            background-color: #f8f8f8;
+        }
+
+        .languages-table td:last-child,
+        .education-table td:last-child {
+            color: #444;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .experience-item h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+            font-size: 1.2em;
+            font-weight: 600;
+            border-bottom: none;
+        }
+
+        .experience-item p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .experience-item ul {
+            margin-top: 10px;
+        }
+
+        .experience-item ul li {
+            font-size: 0.92em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="language-switch">
+        <button id="lang-en">English</button>
+        <button id="lang-fr">Français</button>
+    </div>
+
+    <div class="container">
+        <h1>Anton KARNEICHIK</h1>
+        <div class="contact-info">
+            <p>
+                <script>
+                    (function() {
+                        var a = "antonvkarneichik";
+                        var b = "gmail.com";
+                        var c = a + "@" + b;
+                        document.write('<a href="mailto:' + c + '">' + c + '</a>');
+                    })();
+                </script>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 id="summary-title">Summary</h2>
+            <div class="section-content">
+                <p id="summary-text">Curious and versatile, I adapt to all situations and remain calm and thoughtful even under pressure. I enjoy working, taking on responsibilities, and performing different tasks within the same assignment. Most of my professional experience has been in management and supervisory positions.</p>
+            </div>
+            <div class="skills-list">
+                <span class="skill-tag" id="skill-1">Team-oriented</span>
+                <span class="skill-tag" id="skill-2">Multitasking</span>
+                <span class="skill-tag" id="skill-3">Organized</span>
+                <span class="skill-tag" id="skill-4">Customer-focused</span>
+                <span class="skill-tag" id="skill-5">Proactive</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="languages-title">LANGUAGES</h2>
+            <div class="section-content">
+                <table class="languages-table">
+                    <tr>
+                        <td id="language-1-name">English, French, Russian</td>
+                        <td id="language-1-level">Full Professional Proficiency</td>
+                    </tr>
+                    <tr>
+                        <td id="language-2-name">Dutch</td>
+                        <td id="language-2-level">Limited Working Proficiency</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="experience-title">EXPERIENCE</h2>
+            <div class="section-content">
+                <div class="experience-item">
+                    <h3 id="weezevent-title">2019 -> Now - Weezevent (Belgium) - Casless runner, assistance, acces</h3>
+                    <ul>
+                        <li id="weezevent-1"><b>Cashless Runner & On-Site Support:</b> Actively monitoring both mobile and fixed cashless devices. Troubleshot technical and providing immediate support to ensure smooth and uninterrupted transactions.</li>
+                        <li id="weezevent-2"><b>Access Team & Troubleshooting:</b> Diagnosing and resolving issues with user wristbands and tickets, ensuring a seamless entry experience for attendees.</li>
+                        <li id="weezevent-3">Got a very thorough knowledge of Weez technologies.</li>
+                        <li id="weezevent-4"><b>Event responsible (2025):</b> Took on a leadership role, deploying cashless and access system on site. I served as the primary contact for event organizers, resolving technical challenges and guaranteeing the efficient operation of the system.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 id="donki-title">2023 - Donki - shift leader, assistant manager</h3>
+                    <ul>
+                        <li id="donki-1"><b>estaurant Operations:</b> Managed all aspects of restaurant readiness, including pre-opening preparation, cooking, and front-of-house setup. I planned daily workflows and ensured a consistent supply of products during service hours.</li>
+                        <li id="donki-2"><b>Team Leadership & Management:</b> Supervised and directed a team of student employees, assigning tasks and ensuring efficient completion.</li>
+                        <li id="donki-3"><b>Inventory & Logistics:</b> bi-weekly stock checks and inventory to maintain optimal levels. I was responsible for placing orders, receiving deliveries, and implementing a FIFO (First-In, First-Out).</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 id="ibge-title">2020 -> 2023 - IBGE BIM - forestry worker</h3>
+                    <ul>
+                        <li id="ibge-1"><b>Forestry & Conservation:</b> Managed the lifecycle of forest plantations, performing tasks such as tree felling, planting, and monitoring their growth and health. I also conducted rigorous inventories to track tree species.</li>
+                        <li id="ibge-2"><b>Maintenance & Infrastructure:</b> Maintained public infrastructures to enhance the visitor experience within the forest.</li>
+                        <li id="ibge-3"><b>Forest Health:</b> Monitored and shaped trees to promote forest health and growth.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <h3 id="il-capriani-title">2017 -> 2020 - Il Capriani - Waiter, Bartender, Head Waiter</h3>
+                    <ul>
+                        <li id="il-capriani-1"><b>Server</b> then promoted to <b>Head Waiter</b> based on good performance and leadership skills.</li>
+                        <li id="il-capriani-2">Oversaw daily restaurant operations, including organizing the dining room, managing reservations, and ensuring efficient service.</li>
+                        <li id="il-capriani-3">Supervised, trained, and mentored new staff, fostering a collaborative and high-performing team.</li>
+                        <li id="il-capriani-4">Managed opening and closing procedures, including cash handling, inventory checks, and preparing the restaurant for service.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 id="education-title">EDUCATION</h2>
+            <div class="section-content">
+                <table class="education-table">
+                    <tr>
+                        <td id="education-1-year">2018</td>
+                        <td id="education-1-description">Institut Don Bosco - CESS mathematics and computer science</td>
+                    </tr>
+                    <tr>
+                        <td id="education-2-year">2021</td>
+                        <td id="education-2-description">CDAF - continuing education for foresters, landscapers, and silviculturists</td>
+                    </tr>
+                    <tr>
+                        <td id="education-3-year">2022</td>
+                        <td id="education-3-description">Croix Rouge Belgium - industrial first aid</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const translations = {
+            en: {
+                pageTitle: "Anton KARNEICHIK - CV",
+                summaryTitle: "Summary",
+                summaryText: "Curious and versatile, I adapt to all situations and remain calm and thoughtful even under pressure. I enjoy working, taking on responsibilities, and performing different tasks within the same assignment. Most of my professional experience has been in management and supervisory positions.",
+                skill1: "Team-oriented",
+                skill2: "Multitasking",
+                skill3: "Organized",
+                skill4: "Customer-focused",
+                skill5: "Proactive",
+                languagesTitle: "LANGUAGES",
+                language1Level: "Full Professional Proficiency",
+                language2Level: "Limited Working Proficiency",
+                experienceTitle: "EXPERIENCE",
+                weezeventTitle: "2019 -> Now - Weezevent (Belgium) - Casless runner, assistance, acces",
+                weezevent1: "Cashless Runner & On-Site Support: Actively monitoring both mobile and fixed cashless devices. Troubleshot technical and providing immediate support to ensure smooth and uninterrupted transactions.",
+                weezevent2: "Access Team & Troubleshooting: Diagnosing and resolving issues with user wristbands and tickets, ensuring a seamless entry experience for attendees.",
+                weezevent3: "Got a very thorough knowledge of Weez technologies.",
+                weezevent4: "Event responsible (2025): Took on a leadership role, deploying cashless and access system on site. I served as the primary contact for event organizers, resolving technical challenges and guaranteeing the efficient operation of the system.",
+                donkiTitle: "2023 - Donki - shift leader, assistant manager",
+                donki1: "Restaurant Operations: Managed all aspects of restaurant readiness, including pre-opening preparation, cooking, and front-of-house setup. I planned daily workflows and ensured a consistent supply of products during service hours.",
+                donki2: "Team Leadership & Management: Supervised and directed a team of student employees, assigning tasks and ensuring efficient completion.",
+                donki3: "Inventory & Logistics: bi-weekly stock checks and inventory to maintain optimal levels. I was responsible for placing orders, receiving deliveries, and implementing a FIFO (First-In, First-Out).",
+                ibgeTitle: "2020 -> 2023 - IBGE BIM - forestry worker",
+                ibge1: "<b>Forestry & Conservation: Managed the lifecycle of forest plantations, performing tasks such as tree felling, planting, and monitoring their growth and health. I also conducted rigorous inventories to track tree species.</b>",
+                ibge2: "Maintenance & Infrastructure: Maintained public infrastructures to enhance the visitor experience within the forest.",
+                ibge3: "Forest Health: Monitored and shaped trees to promote forest health and growth.",
+                ilCaprianiTitle: "2017 -> 2020 - Il Capriani - Waiter, Bartender, Head Waiter",
+                ilCapriani1: "server then promoted to Head Waiter based on good performance and leadership skills.",
+                ilCapriani2: "Oversaw daily restaurant operations, including organizing the dining room, managing reservations, and ensuring efficient service.",
+                ilCapriani3: "Supervised, trained, and mentored new staff, fostering a collaborative and high-performing team.",
+                ilCapriani4: "Managed opening and closing procedures, including cash handling, inventory checks, and preparing the restaurant for service.",
+                educationTitle: "EDUCATION",
+                education1Description: "Institut Don Bosco - CESS mathematics and computer science",
+                education2Description: "CDAF - continuing education for foresters, landscapers, and silviculturists",
+                education3Description: "Croix Rouge Belgium - industrial first aid"
+            },
+            fr: {
+                pageTitle: "Anton KARNEICHIK - CV",
+                summaryTitle: "Résumé",
+                summaryText: "Curieux et polyvalent, je m'adapte à toutes les situations et reste calme et réfléchi même sous la pression. J'aime travailler, assumer des responsabilités et effectuer différentes tâches dans le cadre d'une même mission. La majeure partie de mon expérience professionnelle s'est déroulée dans des postes de gestion et de supervision.",
+                skill1: "Esprit d'équipe",
+                skill2: "Polyvalence",
+                skill3: "Organisé",
+                skill4: "Orienté client",
+                skill5: "Proactif",
+                languagesTitle: "LANGUES",
+                language1Level: "Maîtrise professionnelle complète",
+                language2Level: "Maîtrise professionnelle limitée",
+                experienceTitle: "EXPÉRIENCE",
+                weezeventTitle: "2019 -> Aujourd'hui - Weezevent (Belgique) - Opérateur cashless, assistance, accès",
+                weezevent1: "Opérateur Cashless & Support sur Site: Surveiller activement les dispositifs cashless mobiles et fixes. Dépanner et fournir un support immédiat pour garantir des transactions fluides et ininterrompues.",
+                weezevent2: "Équipe d'Accès & Dépannage: Diagnostiquer et résoudre les problèmes liés aux bracelets et aux billets des utilisateurs, assurant une expérience d'entrée fluide pour les participants.",
+                weezevent3: "Acquis une connaissance approfondie des technologies Weez.",
+                weezevent4: "Responsable d'événement (2025): Assumé un rôle de leadership, déployant le système cashless et d'accès sur site. J'ai servi de contact principal pour les organisateurs d'événements, résolvant les défis techniques et garantissant le fonctionnement efficace du système.",
+                donkiTitle: "2023 - Donki - chef d'équipe, assistant gérant",
+                donki1: "Opérations du Restaurant: Géré tous les aspects de la préparation du restaurant, y compris la préparation avant l'ouverture, la cuisine et la mise en place de la salle. J'ai planifié les flux de travail quotidiens et assuré un approvisionnement constant en produits pendant les heures de service.",
+                donki2: "Leadership et Gestion d'Équipe: Supervisé et dirigé une équipe d'employés étudiants, assignant des tâches et garantissant une exécution efficace.",
+                donki3: "Inventaire et Logistique: Vérification des stocks bi-hebdomadaire et inventaire pour maintenir des niveaux optimaux. J'étais responsable de la passation des commandes, de la réception des livraisons et de la mise en œuvre d'une méthode FIFO (First-In, First-Out).",
+                ibgeTitle: "2020 -> 2023 - IBGE BIM - travailleur forestier",
+                ibge1: "<b>Sylviculture et Conservation: Géré le cycle de vie des plantations forestières, effectuant des tâches telles que l'abattage, la plantation et la surveillance de leur croissance et de leur santé. J'ai également mené des inventaires rigoureux pour suivre les espèces d'arbres.</b>",
+                ibge2: "Entretien et Infrastructure: Entretenu les infrastructures publiques pour améliorer l'expérience des visiteurs dans la forêt.",
+                ibge3: "Santé de la Forêt: Surveillé et taillé les arbres pour favoriser la santé et la croissance de la forêt.",
+                ilCaprianiTitle: "2017 -> 2020 - Il Capriani - Serveur, Barman, Chef de Rang",
+                ilCapriani1: "Serveur, puis promu Chef de Rang en raison de mes bonnes performances et de mes compétences en leadership.",
+                ilCapriani2: "Supervisé les opérations quotidiennes du restaurant, y compris l'organisation de la salle, la gestion des réservations et l'assurance d'un service efficace.",
+                ilCapriani3: "Supervisé, formé et encadré le nouveau personnel, favorisant une équipe collaborative et performante.",
+                ilCapriani4: "Géré les procédures d'ouverture et de fermeture, y compris la gestion de la caisse, les vérifications d'inventaire et la préparation du restaurant pour le service.",
+                educationTitle: "FORMATION",
+                education1Description: "Institut Don Bosco - CESS mathematics and computer science",
+                education2Description: "CDAF - continuing education for foresters, landscapers, and silviculturists",
+                education3Description: "Croix Rouge Belgique - industrial first aid"
+            }
+        };
+
+        const updateContent = (lang) => {
+            const t = translations[lang];
+            document.getElementById('page-title').textContent = t.pageTitle;
+            document.getElementById('summary-title').textContent = t.summaryTitle;
+            document.getElementById('summary-text').textContent = t.summaryText;
+            document.getElementById('skill-1').textContent = t.skill1;
+            document.getElementById('skill-2').textContent = t.skill2;
+            document.getElementById('skill-3').textContent = t.skill3;
+            document.getElementById('skill-4').textContent = t.skill4;
+            document.getElementById('skill-5').textContent = t.skill5;
+            document.getElementById('languages-title').textContent = t.languagesTitle;
+            document.getElementById('language-1-level').textContent = t.language1Level;
+            document.getElementById('language-2-level').textContent = t.language2Level;
+            document.getElementById('experience-title').textContent = t.experienceTitle;
+            document.getElementById('weezevent-title').textContent = t.weezeventTitle;
+            document.getElementById('weezevent-1').textContent = t.weezevent1;
+            document.getElementById('weezevent-2').textContent = t.weezevent2;
+            document.getElementById('weezevent-3').textContent = t.weezevent3;
+            document.getElementById('weezevent-4').textContent = t.weezevent4;
+            document.getElementById('donki-title').textContent = t.donkiTitle;
+            document.getElementById('donki-1').textContent = t.donki1;
+            document.getElementById('donki-2').textContent = t.donki2;
+            document.getElementById('donki-3').textContent = t.donki3;
+            document.getElementById('ibge-title').textContent = t.ibgeTitle;
+            document.getElementById('ibge-1').innerHTML = t.ibge1;
+            document.getElementById('ibge-2').textContent = t.ibge2;
+            document.getElementById('ibge-3').textContent = t.ibge3;
+            document.getElementById('il-capriani-title').textContent = t.ilCaprianiTitle;
+            document.getElementById('il-capriani-1').textContent = t.ilCapriani1;
+            document.getElementById('il-capriani-2').textContent = t.ilCapriani2;
+            document.getElementById('il-capriani-3').textContent = t.ilCapriani3;
+            document.getElementById('il-capriani-4').textContent = t.ilCapriani4;
+            document.getElementById('education-title').textContent = t.educationTitle;
+            document.getElementById('education-1-description').textContent = t.education1Description;
+            document.getElementById('education-2-description').textContent = t.education2Description;
+            document.getElementById('education-3-description').textContent = t.education3Description;
+        };
+
+        window.onload = () => {
+            const langEnButton = document.getElementById('lang-en');
+            const langFrButton = document.getElementById('lang-fr');
+
+            langEnButton.addEventListener('click', () => updateContent('en'));
+            langFrButton.addEventListener('click', () => updateContent('fr'));
+        };
+    </script>
+</body>
+
+</html>
